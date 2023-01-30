@@ -20,5 +20,13 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.textView2).text =
                 "Result: " + result.toString();
         }
+
+        findViewById<Button>(R.id.button2).setOnClickListener() {
+            var result = num1.text.toString().toInt() -
+                    num2.text.toString().toInt();
+
+            findViewById<TextView>(R.id.textView2).text =
+                "Result: " + result.toString();
+        }
     }
 }
